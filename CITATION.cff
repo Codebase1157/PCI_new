@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software and the paper."
+title: "PCI-Stack: Physics-Guided Counterfactual Meta-Fusion for Fair and Generalizable Skin Lesion Diagnosis"
+version: 1.0.0
+date-released: 2026-10-22
+license: MIT
+repository-code: "https://github.com/pci-stack/pci-stack"
+doi: 10.5281/zenodo.XXXXXXX
+authors:
+  - family-names: Arora
+    given-names: Amit Kumar
+    affiliation: "I. K. Gujral Punjab Technical University, Kapurthala, Punjab, India"
+    email: manshguide@gmail.com
+  - family-names: Kaur
+    given-names: Amanpreet
+    affiliation: "Chandigarh Engineering College – CGC (Landran), Mohali, Punjab, India"
+    email: er.amanpreet14@gmail.com
+preferred-citation:
+  type: article
+  title: "Invariance-Induced Diversity in Stacked Ensembles: Physics-Guided Counterfactual Meta-Fusion for Fair and Generalizable Skin Lesion Diagnosis"
+  authors:
+    - family-names: Arora
+      given-names: Amit Kumar
+    - family-names: Kaur
+      given-names: Amanpreet
+  journal: "KSII Transactions on Internet and Information Systems"
+  year: 20XX
+  doi: 10.3837/tiis.20XX.XX.0XX
+  issn: "1976-7277"

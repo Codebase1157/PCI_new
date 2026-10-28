@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pci-stack"
+version = "1.0.0"
+description = "Physics-guided counterfactual meta-fusion for fair and generalizable skin lesion diagnosis"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Amit Kumar Arora", email = "manshguide@gmail.com" },
+  { name = "Amanpreet Kaur", email = "er.amanpreet14@gmail.com" },
+]
+keywords = [
+  "algorithmic fairness", "conformal prediction", "domain generalization",
+  "explainable artificial intelligence", "physics-guided counterfactuals",
+  "skin lesion classification",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dynamic = ["dependencies"]
+
+[project.urls]
+Homepage = "https://github.com/pci-stack/pci-stack"
+Paper = "https://doi.org/10.3837/tiis.20XX.XX.0XX"
+Zenodo = "https://doi.org/10.5281/zenodo.XXXXXXX"
+
+[project.scripts]
+pci-stack = "pci_stack.cli:main"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[tool.setuptools.packages.find]
+include = ["pci_stack*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

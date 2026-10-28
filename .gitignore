@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.env
+
+# Data & weights (never committed — see docs/data_access.md)
+# Anchored to repo root so the pci_stack/data source package is NOT ignored.
+/data/
+/datasets/
+*.pt
+*.pth
+*.safetensors
+!checkpoints/**/*.json
+checkpoints/adapters/*/          # real adapter files are fetched, not vendored
+!checkpoints/adapters/.gitkeep
+
+# Run outputs
+runs/
+outputs/
+wandb/
+*.ckpt
+
+# Keep example logs & result tables, ignore fresh run logs
+logs/*.jsonl
+!logs/*.log
+!logs/README.md
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
